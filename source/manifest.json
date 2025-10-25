@@ -10,7 +10,7 @@
     "128": "assets/icons/favicon-128.png"
   },
   "description": "Temporarily switch browser user-agent randomly or manually (iOS, Android, Windows, Linux, macOS).",
-  "homepage_url": "https://github.com/abhijithvijayan/web-extension-starter",
+  "homepage_url": "https://github.com/arshath2w-afk/browser-extension",
   "short_name": "UA Switcher",
 
   "permissions": [
@@ -27,9 +27,9 @@
   },
   "__firefox__content_security_policy": "script-src 'self'; object-src 'self'",
 
-  "__chrome|firefox__author": "abhijithvijayan",
+  "__chrome|firefox__author": "arshath2w-afk",
   "__opera__developer": {
-    "name": "abhijithvijayan"
+    "name": "arshath2w-afk"
   },
 
   "__firefox__browser_specific_settings": {
