@@ -15,6 +15,7 @@ body {
   h2 {
     font-size: 25px;
     text-align: center;
+    margin-bottom: 1rem;
   }
 
   #options__button {
@@ -29,6 +30,65 @@ body {
     cursor: pointer;
     opacity: 0.8;
     display: flex;
+  }
+
+  .form__row {
+    margin: 0.75rem 0;
+
+    label {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    select,
+    textarea,
+    input[type="text"] {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background: #fff;
+    }
+
+    #ua-mode {
+      display: flex;
+      gap: 1rem;
+
+      label {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+
+    button {
+      padding: 0.5rem 0.75rem;
+      border-radius: 8px;
+      background: #1a73e8;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .status.ok {
+    color: #0a7f2e;
+    font-weight: 600;
+    margin-top: 0.5rem;
   }
 
   .links__holder {

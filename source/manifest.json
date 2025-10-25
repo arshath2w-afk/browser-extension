@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Sample WebExtension",
+  "name": "User-Agent Switcher",
   "version": "0.0.0",
 
   "icons": {
@@ -9,9 +9,9 @@
     "48": "assets/icons/favicon-48.png",
     "128": "assets/icons/favicon-128.png"
   },
-  "description": "Sample description",
-  "homepage_url": "https://github.com/abhijithvijayan/web-extension-starter",
-  "short_name": "Sample Name",
+  "description": "Temporarily switch browser user-agent randomly or manually (iOS, Android, Windows, Linux, macOS).",
+  "homepage_url": "https://github.com/arshath2w-afk/browser-extension",
+  "short_name": "UA Switcher",
 
   "permissions": [
     "activeTab",
@@ -27,9 +27,9 @@
   },
   "__firefox__content_security_policy": "script-src 'self'; object-src 'self'",
 
-  "__chrome|firefox__author": "abhijithvijayan",
+  "__chrome|firefox__author": "arshath2w-afk",
   "__opera__developer": {
-    "name": "abhijithvijayan"
+    "name": "arshath2w-afk"
   },
 
   "__firefox__browser_specific_settings": {
@@ -49,7 +49,7 @@
       "48": "assets/icons/favicon-48.png",
       "128": "assets/icons/favicon-128.png"
     },
-    "default_title": "tiny title",
+    "default_title": "User-Agent Switcher",
     "__firefox__browser_style": false
   },
 
@@ -70,7 +70,8 @@
       ],
       "js": [
         "js/contentScript.bundle.js"
-      ]
+      ],
+      "run_at": "document_start"
     }
   ]
 }
